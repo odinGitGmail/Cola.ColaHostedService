@@ -1,0 +1,2 @@
+# Cola.ColaHostedService
+Cola.ColaHostedService
