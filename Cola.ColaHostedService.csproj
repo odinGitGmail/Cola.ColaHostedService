@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Cola.ColaHostedService</PackageId>
+        <Authors>OdinSam</Authors>
+        <Description>Cola.ColaHostedService 缓存组件</Description>
+        <Copyright>copyRight © 2023 OdinSam</Copyright>
+        <PackageIcon>./icon.png</PackageIcon>
+        <PackageReadmeFile>./readme.md</PackageReadmeFile>
+        <PackageTags>Cola.ColaHostedService;cola;HostedService</PackageTags>
+        <Version>1.0.3</Version>
+        <AssemblyVersion>1.0.3</AssemblyVersion>
+        <FileVersion>1.0.3</FileVersion>
+        <Title>Cola.ColaHostedService</Title>
+        <PackageProjectUrl>https://github.com/odinGitGmail/Cola.ColaHostedService</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/odinGitGmail/Cola.ColaHostedService</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.png"  Pack="true" PackagePath="\" />
+        <EmbeddedResource Include="icon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="readme.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Cola.Core\Cola.Core.csproj" />
+    </ItemGroup>
+
+</Project>
